@@ -20,7 +20,7 @@ type profile struct {
 }
 
 func init(){
-	connStr := "user=postgres password=01UW01E01u71m1 host=localhost port=5432 dbname=crud_api sslmode=disable"
+	connStr := "user=postgres password=mypassword host=localhost port=5432 dbname=crud_api sslmode=disable"
 	db,err = sql.Open("postgres", connStr)
 
 	if err != nil {
